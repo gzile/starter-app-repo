@@ -1,7 +1,7 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import avatarImage from './images/avatar.jpg'
+import avatarImage from './images/avatar.png'
 
 const hexaColor = () => {
   let str = '0123456789abcdef'
@@ -25,6 +25,7 @@ const HexaColor = () => {
     borderRadius: '5px',
     width: '75%',
     border: '2px solid black',
+    background: bgColor,
   }
   return (
     <div style={styles}>
@@ -49,7 +50,7 @@ const Header = () => (
 // User Card Component
 const UserCard = () => (
   <div className='user-card'>
-    <img src={avatarImage} alt='avatar image' />
+    <img src={avatarImage} alt='avatar' />
     <h2>Goce Zhileski</h2>
   </div>
 )
