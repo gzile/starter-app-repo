@@ -1,0 +1,17 @@
+
+header {
+  background-color: rgb(136, 67, 201);
+}
+
+.header-wrapper {
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  margin: 2px auto;
+}
+
+.container-wrapper {
+  display: flex;
+  margin: 2px auto;
+}
+

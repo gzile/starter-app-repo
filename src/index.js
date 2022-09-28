@@ -1,30 +1,16 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import avatarImage from './images/avatar.png'
+import avatarImg from './images/avatar.png'
 import './styles/Style.css'
+import { HeaderComponent } from './components/header/header'
+import { UserCard } from './components/user/user'
 
-// Header Component
-const Header = () => (
-  <header>
-    <div className='header-wrapper'>
-      <h1>Welcome to React</h1>
-      <h2>Getting Started React</h2>
-      <h3>JavaScript Library</h3>
-      <p>Goce Zhileski</p>
-      <small>Sep 23, 2022</small>
-    </div>
-  </header>
-)
-
-// User Card Component
-const UserCard = () => (
-  <div className='user-card'>
-    <img src={avatarImage} alt='avatar' />
-    <h2>Goce Zhileski</h2>
-  </div>
-)
-
+const userData = {
+  name: 'Goce',
+  secondName: 'Zhileski',
+  avatarSrc: avatarImg,
+}
 // TechList Component
 const TechList = () => {
   const techs = ['HTML', 'CSS', 'JavaScript']
@@ -48,7 +34,7 @@ const Main = () => (
       <ul>
         <TechList />
       </ul>
-      <UserCard />
+      <UserCard  avatarImg={userData.avatarSrc} name={userData.name} surname={userData.secondName}/>
 
     </div>
   </main>
@@ -66,7 +52,7 @@ const Footer = () => (
 // The App, or the parent or the container component
 const App = () => (
   <div className='app'>
-    <Header />
+    <HeaderComponent />
     <Main />
     <Footer />
   </div>
