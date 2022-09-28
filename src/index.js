@@ -79,11 +79,7 @@ const Main = () => (
         <TechList />
       </ul>
       <UserCard />
-      <div>
-        {/* Generate two different hexa colors every time */}
-        <HexaColor />
-        <HexaColor />
-      </div>
+
     </div>
   </main>
 )
